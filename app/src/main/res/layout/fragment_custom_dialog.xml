@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="25dp"
+    tools:context=".dialog.CustomDialog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="14dp"
+            android:id="@+id/btn_close"
+            android:contentDescription="@string/image_user_dummy" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/alarm"
+                android:contentDescription="@string/image_user_dummy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/fredoka_one"
+                android:text="@string/daily_reminder"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/mlight"
+                android:text="@string/kamu_dapat_menghidupkan_dan_mematikan_daily_reminder_yang_berjalan_pukul_09_00_am"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent" />
+            
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="6dp"
+                app:cardBackgroundColor="@color/orange_tint">
+                
+                <LinearLayout
+                    android:layout_marginVertical="8dp"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/fredoka_one"
+                        android:text="@string/daily_reminder"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                    
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch_alarm"
+                        android:layout_width="match_parent"
+                        app:thumbTint="@color/colorAccent"
+                        app:trackTint="#F8B097"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">GithubUserApp</string>
+    <string name="button_reminder">button_reminder</string>
+    <string name="detail_user_dummy">Detail User</string>
+    <string name="base_appbar">base_appbar</string>
+    <string name="btn_back">btn_back</string>
+    <string name="image_user_dummy">image user</string>
+    <string name="icon_location_dummy">icon_location</string>
+    <string name="username_dummy">Gilang Safera</string>
+    <string name="find_user">Find User</string>
+    <string name="empty_state">Empty State</string>
+    <string name="make_sure_you_can_convince_a_lot_of_people">make sure you can convince a lot of people</string>
+    <string name="no_follower">No Follower</string>
+    <string name="not_following_someone">Not following someone</string>
+    <string name="follow_the_person_you_think_is_good">follow the person you think is good</string>
+    <string name="is_preparing_a_big_project">is preparing a big project</string>
+    <string name="no_repository">No repository</string>
+    <string name="user_not_found">User not found</string>
+    <string name="make_sure_your_friends_don_t_get_lost_in_space">Make sure your friends don\'t get lost in space</string>
+    <string name="follower">Follower</string>
+    <string name="repository">Repository</string>
+    <string name="following">Following</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="daily_reminder">Daily Reminder</string>
+    <string name="kamu_dapat_menghidupkan_dan_mematikan_daily_reminder_yang_berjalan_pukul_09_00_am">Kamu dapat menghidupkan dan mematikan daily reminder yang berjalan pukul 09 : 00 AM</string>
+    <string name="list_favorite">List Favorite</string>
+</resources>

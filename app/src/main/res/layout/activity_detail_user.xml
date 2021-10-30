@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ui.detailUser.DetailUserActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/base_appbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/base_appbar_detail" />
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        android:contentDescription="@string/btn_back" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/detail_user_dummy"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/repository"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dummy" />
+
+    <TextView
+        android:id="@+id/detail_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat"
+        android:maxLines="1"
+        android:text="@string/detail_user_dummy"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/detail_image"
+        app:layout_constraintTop_toTopOf="@+id/detail_image" />
+
+    <TextView
+        android:id="@+id/detail_repos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat"
+        android:maxLines="2"
+        android:text="@string/repository"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/detail_follower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat"
+        android:maxLines="2"
+        android:text="@string/follower"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_repos"
+        app:layout_constraintEnd_toStartOf="@+id/detail_repos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/detail_repos" />
+
+    <TextView
+        android:id="@+id/detail_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat"
+        android:maxLines="2"
+        android:text="@string/following"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/detail_repos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/detail_repos"
+        app:layout_constraintTop_toTopOf="@+id/detail_repos"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/detail_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="72dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/mlight"
+        android:maxLines="2"
+        android:text="@string/detail_user_dummy"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/detail_username" />
+
+    <TextView
+        android:id="@+id/dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/mlight"
+        android:maxLines="2"
+        android:text="@string/repository"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/detail_repos"
+        app:layout_constraintStart_toStartOf="@+id/detail_repos"
+        app:layout_constraintTop_toBottomOf="@+id/detail_repos" />
+
+    <TextView
+        android:id="@+id/dummy3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/mlight"
+        android:maxLines="2"
+        android:text="@string/following"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/detail_following"
+        app:layout_constraintStart_toStartOf="@+id/detail_following"
+        app:layout_constraintTop_toBottomOf="@+id/detail_following" />
+
+    <TextView
+        android:id="@+id/dummy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/mlight"
+        android:maxLines="2"
+        android:text="@string/follower"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/detail_follower"
+        app:layout_constraintStart_toStartOf="@+id/detail_follower"
+        app:layout_constraintTop_toBottomOf="@+id/detail_follower" />
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/image_user_dummy" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toEndOf="@+id/detail_image"
+        app:layout_constraintTop_toBottomOf="@+id/detail_username"
+        app:srcCompat="@drawable/ic_location"
+        android:contentDescription="@string/icon_location_dummy" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:id="@+id/btn_fav"
+        android:layout_marginEnd="24dp"
+        app:backgroundTint="@color/orange_tint"
+        app:tint="@color/colorAccent"
+        android:src="@drawable/ic_unfavorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_user_detail"
+        app:layout_constraintTop_toBottomOf="@id/dummy"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:tabTextColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager_user_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_user_detail" />
+
+
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/detail_rv"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:layout_marginStart="1dp"-->
+<!--        android:layout_marginEnd="1dp"-->
+<!--        tools:listitem="@layout/item_recycler_repository"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView3" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Favorite</string>
+    <string name="image_user_dummy">image</string>
+    <string name="username_dummy">username</string>
+</resources>
